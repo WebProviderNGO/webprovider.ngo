@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/normalize.css@8.0.1/normalize.css" rel="stylesheet">
+    <link href="https://unpkg.com/blueprint-css@3.1.1/dist/blueprint.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="themes.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="Service"></div>
+    <div class="Service2"></div>
+    <div bp="container">
+        <div bp="flex">
+            <div bp="fill"></div>
+            <div class="Donat" bp="fit">
+                <div id="DonatOpen" class="BBackground DonatOpen" bp="padding padding-top--none">
+                    <div class="WText" bp="padding padding-left--none float-left">Отправить перевод</div>
+                    <div class="WClose" bp="padding padding-right--none float-right">
+                        <ion-icon name="close-sharp" onclick="DonatClose()"></ion-icon>
+                    </div>
+                    <div bp="padding-top--sm padding-bottom--sm">
+                        <input class="TInput" type="text" placeholder="От кого">
+                    </div>
+                    <div bp="padding-top--sm padding-bottom--sm">
+                        <input class="TInput" type="number" placeholder="Сумма">
+                    </div>
+                    <div bp="padding-top--sm padding-bottom--sm">
+                        <textarea class="TInput" rows="5" placeholder="Комментарий"></textarea>
+                    </div>
+                    <div bp="padding-top--sm">
+                        <button href="" class="WButton BText W100Button">Перевести</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div bp="hide show@lg">
+            <div bp="flex vertical-center">
+                <div bp="fill"></div>
+                <div class="Search" bp="fit">
+                    <div id="SearchOpen" class="BBackground SearchOpen" bp="padding padding-top--none">
+                        <div class="WClose" bp="padding padding-right--none float-right">
+                            <ion-icon name="close-sharp" onclick="SearchClose()"></ion-icon>
+                        </div>
+                        <input class="TInput" type="search" placeholder="Текст для поиска">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="Container" bp="container">
+        <div bp="flex vertical-center">
+            <div bp="fit">
+                <div bp="padding"><a href=""><img src="logo-ico50.png" alt="" width="70%"></a></div>
+            </div>
+            <div bp="fill">
+                <div bp="hide show@lg">
+                    <nav class="WNav" bp="flex">
+                        <a href="" bp="fit padding">Организация</a>
+                        <a href="" bp="fit padding">Деятельность</a>
+                        <a href="" bp="fit padding">Проекты</a>
+                        <a href="" bp="fit padding">Публикации</a>
+                        <a href="" bp="fit padding">Документы</a>
+                    </nav>
+                </div>
+            </div>
+            <div class="BBackground NavbarButton" bp="fit">
+                <div>
+                    <div bp="grid 6 gap-column-none vertical-center">
+                        <div bp="padding hide show@lg">
+                            <button class="TButton WText" onclick="SearchOpen()">Поиск
+                                <ion-icon name="search-circle-sharp"></ion-icon>
+                            </button>
+                        </div>
+                        <div bp="padding text-center">
+                            <button class="WButton BText" onclick="DonatOpen()">Поддержать</button>
+                        </div>
+                        <div bp="show hide@lg padding text-right" onclick="MobileMenuOpen()">
+                            <ion-icon name="menu-sharp" size="large"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <nav id="MobileMenuOpen" class="MobileMenu" bp="show hide@lg">
+            <div class="MobileMenuClose" bp="padding">
+                <ion-icon name="close-sharp" onclick="MobileMenuClose()"></ion-icon>
+            </div>
+            <a href="#" bp="padding">Организация</a>
+            <a href="#" bp="padding">Деятельность</a>
+            <a href="#" bp="padding">Проекты</a>
+            <a href="#" bp="padding">Публикации</a>
+            <a href="#" bp="padding">Документы</a>
+            <div bp="padding"><input class="TInput" type="search" placeholder="Поиск"></div>
+        </nav>
+
+        <script>
+            function SearchOpen() {
+                document.getElementById('SearchOpen').setAttribute("class", "BBackground SearchOpen SearchOpenOpen");
+            }
+            function DonatOpen() {
+                document.getElementById('DonatOpen').setAttribute("class", "BBackground DonatOpen DonatOpenOpen");
+            }
+            function MobileMenuOpen() {
+                document.getElementById('MobileMenuOpen').setAttribute("class", "MobileMenu MobileMenuOpen");
+            }
+            function HelpOpen() {
+                document.getElementById('HelpOpen').setAttribute("class", "BBackground HelpOpen HelpOpenOpen");
+            }
+            function SearchClose() {
+                document.getElementById('SearchOpen').setAttribute("class", "BBackground SearchOpen");
+            }
+            function DonatClose() {
+                document.getElementById('DonatOpen').setAttribute("class", "BBackground DonatOpen");
+            }
+            function MobileMenuClose() {
+                document.getElementById('MobileMenuOpen').setAttribute("class", "MobileMenu");
+            }
+            function HelpClose() {
+                document.getElementById('HelpOpen').setAttribute("class", "BBackground HelpOpen");
+            }
+        </script>
+
+        <div class="Content">
+            <div bp="grid 6@md 1@sm gap-column-none">
+                <div bp="padding--xxl">
+                    <h1><small>Subheading</small>Heading 1</h1>
+                    <p>Предварительные выводы неутешительны: внедрение современных методик предоставляет широкие
+                        возможности для инновационных методов управления процессами! Каждый из нас понимает очевидную
+                        вещь: базовый вектор развития обеспечивает актуальность соответствующих условий активизации.</p>
+                </div>
+                <div>
+                    <img src="img/web-design-2038872_1280.jpg" alt="">
+                </div>
+            </div>
+            <div bp="grid 6@md 1@sm gap-column-none vertical-center">
+                <div class="Footer2" bp="last@md">
+                    <div bp="grid 6 gap-column-none vertical-center">
+                        <div bp="text-center">
+                            <button class="WButton BText W100Button" bp="padding" onclick="HelpOpen()">Получить помощь
+                                <ion-icon name="help-buoy-sharp"></ion-icon>
+                            </button>
+                        </div>
+                        <div class="FooterNav BBackground WText">
+                            <nav bp="flex float-right">
+                                <a bp="fit padding padding-left--none" href="">
+                                    <ion-icon name="logo-mastodon"></ion-icon>
+                                </a>
+                                <a bp="fit padding padding-left--none" href="">
+                                    <ion-icon name="logo-facebook"></ion-icon>
+                                </a>
+                                <a bp="fit padding padding-left--none" href="">
+                                    <ion-icon name="logo-vk"></ion-icon>
+                                </a>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+                <div class="Footer" bp="first@md">
+                    <div bp="flex gap-column-none vertical-center">
+                        <div bp="fit padding">&copy; 2021 АНО «Веб-провайдер»</div>
+                        <div bp="fill">
+                            <nav bp="flex">
+                                <a bp="fit padding" href="">О сайте</a>
+                                <a bp="fit padding padding-left--none" href="">Контакты</a>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="Help">
+            <div id="HelpOpen" class="BBackground HelpOpen" bp="padding padding-top--none">
+                <div class="WText" bp="padding padding-left--none float-left">Отправить перевод</div>
+                <div class="HelpClose" bp="padding padding-right--none float-right">
+                    <ion-icon name="close-sharp" onclick="HelpClose()"></ion-icon>
+                </div>
+                <div bp="padding-top--sm padding-bottom--sm">
+                    <input class="TInput" type="text" placeholder="От кого">
+                </div>
+                <div bp="padding-top--sm padding-bottom--sm">
+                    <input class="TInput" type="number" placeholder="Сумма">
+                </div>
+                <div bp="padding-top--sm padding-bottom--sm">
+                    <textarea class="TInput" rows="5" placeholder="Комментарий"></textarea>
+                </div>
+                <div bp="padding-top--sm">
+                    <button href="" class="WButton BText W100Button">Перевести</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

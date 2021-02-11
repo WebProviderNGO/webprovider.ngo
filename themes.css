@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    word-spacing: .25rem;
+    color: #555;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: bottom;
+}
+
+h1 {
+    color: black;
+}
+
+input,
+textarea {
+    max-width: 100%;
+    width: 100%;
+    padding: 0 10px;
+    background: #fff;
+    color: #666;
+    border: 1px solid #e5e5e5;
+    transition: .2s ease-in-out;
+    transition-property: color, background-color, border;
+}
+
+input {
+    height: 40px;
+}
+
+textarea {
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+input:focus {
+    border-color: var(--ColorBlue);
+}
+
+.TInput {
+    border: none;
+}
+
+button,
+[type="button"],
+[type="submit"],
+[type="reset"],
+[role="button"] {
+    display: inline-block;
+    cursor: pointer;
+    border: 2px solid transparent;
+    padding: .75rem 1rem;
+    background: transparent;
+    color: transparent;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: x-small;
+    font-weight: bold;
+    transition: .2s ease-in-out;
+    transition-property: color, background-color, border;
+}
+
+.TButton:hover,
+.TButton:focus {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.TButton {
+    background-color: transparent;
+}
+
+.WButton {
+    background-color: white;
+}
+
+.WButton:hover,
+.WButton:focus {
+    background-color: #fafafa;
+    border-color: #fafafa;
+}
+
+.W100Button {
+    display: inline-block;
+    width: 100%;
+}
+
+.WText {
+    color: white;
+}
+
+.BText {
+    color: var(--ColorBlue);
+}
+
+nav a {
+    text-decoration: none;
+    font-size: small;
+    font-weight: lighter;
+    text-transform: uppercase;
+    transition: .1s ease-in-out;
+    transition-property: color;
+}
+
+.WNav a {
+    color: #555;
+}
+
+.WNav a:hover,
+.WNav a:focus {
+    color: black;
+}
+
+[bp~="padding--xl"] {
+    padding: 48px !important;
+}
+
+@media (min-width:300px) {
+    [bp~="padding--xxl"] {
+        padding: 16px !important;
+    }
+}
+
+@media (min-width:480px) {
+    [bp~="padding--xxl"] {
+        padding: 24px !important;
+    }
+}
+
+@media (min-width:720px) {
+    [bp~="padding--xxl"] {
+        padding: 48px !important;
+    }
+}
+
+@media (min-width:960px) {
+    [bp~="padding--xxl"] {
+        padding: 96px !important;
+    }
+}
+
+
+.Search,
+.Donat {
+    width: 275px;
+}
+
+.SearchOpen {
+    width: 275px;
+    position: absolute;
+    top: 140px;
+    transition: top .3s ease-in-out;
+}
+
+.SearchOpenOpen {
+    top: 75px;
+    z-index: 1;
+}
+
+.DonatOpen {
+    width: 275px;
+    position: absolute;
+    transition: top .6s ease-in-out;
+}
+
+
+ion-icon[name="menu-sharp"]:hover,
+ion-icon[name="close-sharp"]:hover {
+    cursor: pointer;
+}
+
+.MobileMenu {
+    position: absolute;
+    width: 275px;
+    right: -275px;
+    background-color: var(--ColorBlue);
+    transition: right .2s ease-in-out;
+}
+
+.MobileMenu a {
+    display: block;
+    color: white;
+}
+
+.MobileMenuOpen {
+    right: 0px;
+}
+
+.MobileMenuClose {
+    position: absolute;
+    top: 0;
+    right: 8px;
+    color: white;
+}
+
+.WClose {
+    color: white;
+}
+
+.HelpOpen {
+    position: absolute;
+    transition: right .6s ease-in-out;
+}

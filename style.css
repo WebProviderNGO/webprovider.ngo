@@ -1,0 +1,172 @@
+html {
+    --ColorBlue: #377ff8;
+    --BackgroundBlue: #377ff8;
+}
+
+body {
+    overflow: hidden;
+}
+
+body,
+.Service,
+.Service2 {
+    background-color: #dadeea;
+}
+
+.Service {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.Service2 {
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    z-index: 1;
+}
+
+@media (min-width:300px) {
+    .DonatOpen {
+        top: -265px;
+    }
+
+    .DonatOpenOpen {
+        top: 70px;
+    }
+
+    .HelpOpen {
+        width: 100%;
+        top: 378px;
+        right: -385px;
+    }
+
+    .HelpOpenOpen {
+        right: 0;
+    }
+}
+
+@media (min-width:720px) {
+    body {
+        margin-top: 0;
+    }
+
+    .Service {
+        height: 0;
+    }
+
+    .HelpOpen {
+        width: 385px;
+        top: 128px;
+        right: -385px;
+    }
+
+    .HelpOpenOpen {
+        right: 0;
+    }
+}
+
+@media (min-width:960px) {
+    body {
+        margin-top: 180px;
+    }
+
+    .Service {
+        height: 180px;
+    }
+
+    .Service2 {
+        right: 0px;
+        width: 140px;
+    }
+
+    .DonatOpen {
+        top: -105px;
+    }
+
+    .DonatOpenOpen {
+        top: 252px;
+    }
+
+    .HelpOpen {
+        width: 500px;
+        top: 425px;
+        right: -360px;
+    }
+
+    .HelpOpenOpen {
+        right: 140px;
+    }
+}
+
+@media (min-width:1440px) {
+    .Service2 {
+        right: -45px;
+        width: 500px;
+    }
+
+    .HelpOpen {
+        top: 405px;
+        right: -45px;
+    }
+
+    .HelpOpenOpen {
+        right: 460px;
+    }
+}
+
+h1 small {
+    display: block;
+    font-size: small;
+    font-weight: lighter;
+    text-transform: uppercase;
+}
+
+.Container {
+    background-color: white;
+    height: auto;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.NavbarButton,
+.Footer2 {
+    z-index: 2;
+}
+
+.NavbarButton {
+    color: white;
+}
+
+.BBackground {
+    background-color: var(--BackgroundBlue);
+}
+
+.WBackground {
+    background-color: white;
+}
+
+.Footer {
+    word-spacing: normal;
+}
+
+.Footer,
+.Footer a {
+    font-size: x-small;
+    color: rgba(0, 0, 0, 0.25);
+}
+
+.Footer a:hover,
+.Footer a:focus {
+    color: black;
+}
+
+.FooterNav ion-icon {
+    font-size: 18px;
+    color: white;
+}
+
+.FooterNav ion-icon:hover,
+.FooterNav ion-icon:focus {
+    color: rgba(255, 255, 255, 0.8);
+}
