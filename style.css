@@ -3,9 +3,9 @@ html {
     --BackgroundBlue: #377ff8;
 }
 
-/* body {
-    overflow: hidden;
-} */
+body {
+    overflow-x: hidden;
+}
 
 body,
 .Service,
@@ -39,7 +39,7 @@ body,
     .HelpOpen {
         width: 100%;
         top: 378px;
-        right: -385px;
+        right: -375px;
     }
 
     .HelpOpenOpen {
@@ -102,13 +102,13 @@ body,
 
 @media (min-width:1440px) {
     .Service2 {
-        right: -45px;
+        right: -40px;
         width: 500px;
     }
 
     .HelpOpen {
-        top: 405px;
-        right: -45px;
+        top: 408px;
+        right: -40px;
     }
 
     .HelpOpenOpen {
