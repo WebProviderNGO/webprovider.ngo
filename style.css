@@ -3,9 +3,9 @@ html {
     --BackgroundBlue: #377ff8;
 }
 
-body {
+/* body {
     overflow: hidden;
-}
+} */
 
 body,
 .Service,
